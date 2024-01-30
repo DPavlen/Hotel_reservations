@@ -4,7 +4,11 @@ from datetime import date
 from pydantic import BaseModel
 
 
-app = FastAPI()
+app = FastAPI(
+     title="Бронирование отелей",
+     version="0.1.0",
+     root_path="/api",
+)
 
 
 class SHotel(BaseModel):
